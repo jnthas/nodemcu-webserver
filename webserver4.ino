@@ -153,7 +153,7 @@ void setup(void) {
   Serial.begin(115200);
 
   WiFiManager wifiManager;
-  wifiManager.resetSettings();
+  //wifiManager.resetSettings();
   wifiManager.autoConnect("AutoConnectAP");
 
   server.on("/", handleRoot);
